@@ -1,0 +1,275 @@
+[
+    {
+        "model": "api.poll",
+        "pk": 1,
+        "fields": {
+            "name": "Опрос первый",
+            "date_start": "2021-11-01T09:20:55Z",
+            "date_start_no_editable": "2021-11-01T09:20:55Z",
+            "date_end": "2021-12-25T09:21:07Z",
+            "description": "Описание первого опроса",
+            "users": []
+        }
+    },
+    {
+        "model": "api.poll",
+        "pk": 2,
+        "fields": {
+            "name": "Опрос второй",
+            "date_start": "2021-11-01T09:24:21Z",
+            "date_start_no_editable": "2021-11-01T09:24:21Z",
+            "date_end": "2021-11-05T09:24:43Z",
+            "description": "Описание второго опроса",
+            "users": []
+        }
+    },
+    {
+        "model": "api.poll",
+        "pk": 3,
+        "fields": {
+            "name": "Опрос третий",
+            "date_start": "2021-12-01T09:26:47Z",
+            "date_start_no_editable": "2021-12-01T09:26:47Z",
+            "date_end": "2021-12-05T09:26:58Z",
+            "description": "Описание третьего опроса",
+            "users": []
+        }
+    },
+    {
+        "model": "api.poll",
+        "pk": 4,
+        "fields": {
+            "name": "Опрос четвертый",
+            "date_start": "2021-11-01T09:28:57Z",
+            "date_start_no_editable": "2021-11-01T09:28:57Z",
+            "date_end": null,
+            "description": "Описание четвертого опроса",
+            "users": []
+        }
+    },
+    {
+        "model": "api.question",
+        "pk": 1,
+        "fields": {
+            "poll": 1,
+            "description": "Где?",
+            "type_question": "1"
+        }
+    },
+    {
+        "model": "api.question",
+        "pk": 2,
+        "fields": {
+            "poll": 1,
+            "description": "Кто?",
+            "type_question": "2"
+        }
+    },
+    {
+        "model": "api.question",
+        "pk": 3,
+        "fields": {
+            "poll": 1,
+            "description": "Когда?",
+            "type_question": "3"
+        }
+    },
+    {
+        "model": "api.question",
+        "pk": 4,
+        "fields": {
+            "poll": 2,
+            "description": "Вопрос писать не имеет смысла, так как дата не позволит записать ответ",
+            "type_question": "1"
+        }
+    },
+    {
+        "model": "api.question",
+        "pk": 5,
+        "fields": {
+            "poll": 3,
+            "description": "Вопрос писать не имеет смысла, так как дата не позволит записать ответ",
+            "type_question": "1"
+        }
+    },
+    {
+        "model": "api.question",
+        "pk": 6,
+        "fields": {
+            "poll": 4,
+            "description": "Фантазии не хватает придумать какой-то вопрос. Будем считать, что тут написан нормльный вопрос.",
+            "type_question": "2"
+        }
+    },
+    {
+        "model": "api.question",
+        "pk": 7,
+        "fields": {
+            "poll": 4,
+            "description": "В данном вопросе тоже будем считать, что тут сложный вопрос",
+            "type_question": "3"
+        }
+    },
+    {
+        "model": "api.answer",
+        "pk": 1,
+        "fields": {
+            "text": "Там",
+            "question": 1,
+            "user": null,
+            "is_admin": true,
+            "is_right": true
+        }
+    },
+    {
+        "model": "api.answer",
+        "pk": 2,
+        "fields": {
+            "text": "Я",
+            "question": 2,
+            "user": null,
+            "is_admin": true,
+            "is_right": false
+        }
+    },
+    {
+        "model": "api.answer",
+        "pk": 3,
+        "fields": {
+            "text": "Ты",
+            "question": 2,
+            "user": null,
+            "is_admin": true,
+            "is_right": true
+        }
+    },
+    {
+        "model": "api.answer",
+        "pk": 4,
+        "fields": {
+            "text": "Вчера",
+            "question": 3,
+            "user": null,
+            "is_admin": true,
+            "is_right": true
+        }
+    },
+    {
+        "model": "api.answer",
+        "pk": 5,
+        "fields": {
+            "text": "Сегодня",
+            "question": 3,
+            "user": null,
+            "is_admin": true,
+            "is_right": false
+        }
+    },
+    {
+        "model": "api.answer",
+        "pk": 6,
+        "fields": {
+            "text": "Завтра",
+            "question": 3,
+            "user": null,
+            "is_admin": true,
+            "is_right": true
+        }
+    },
+    {
+        "model": "api.answer",
+        "pk": 7,
+        "fields": {
+            "text": "Ответ соответственно тоже не имеет смысла",
+            "question": 4,
+            "user": null,
+            "is_admin": true,
+            "is_right": true
+        }
+    },
+    {
+        "model": "api.answer",
+        "pk": 8,
+        "fields": {
+            "text": "Ответ соответственно тоже не имеет смысла",
+            "question": 5,
+            "user": null,
+            "is_admin": true,
+            "is_right": true
+        }
+    },
+    {
+        "model": "api.answer",
+        "pk": 9,
+        "fields": {
+            "text": "Первый ответ на выдуманный вопрос",
+            "question": 6,
+            "user": null,
+            "is_admin": true,
+            "is_right": false
+        }
+    },
+    {
+        "model": "api.answer",
+        "pk": 10,
+        "fields": {
+            "text": "Второй ответ на выдуманный вопрос",
+            "question": 6,
+            "user": null,
+            "is_admin": true,
+            "is_right": true
+        }
+    },
+    {
+        "model": "api.answer",
+        "pk": 11,
+        "fields": {
+            "text": "Третий ответ на выдуманный вопрос",
+            "question": 6,
+            "user": null,
+            "is_admin": true,
+            "is_right": false
+        }
+    },
+    {
+        "model": "api.answer",
+        "pk": 12,
+        "fields": {
+            "text": "Первый ответ на еще один выдуманный вопрос",
+            "question": 7,
+            "user": null,
+            "is_admin": true,
+            "is_right": true
+        }
+    },
+    {
+        "model": "api.answer",
+        "pk": 13,
+        "fields": {
+            "text": "Второй ответ на еще один выдуманный вопрос",
+            "question": 7,
+            "user": null,
+            "is_admin": true,
+            "is_right": true
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$U9QJjtb3PnVkGyGKwdZ3Gy$kTzCTXF8XJATwQ33R6c0DGKW2GIzZI3q15wLBDIRjTw=",
+            "last_login": "2021-11-09T09:20:23.683Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2021-11-09T09:20:09.496Z",
+            "is_anonymous_user": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]
