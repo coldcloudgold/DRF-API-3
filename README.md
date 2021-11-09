@@ -107,6 +107,7 @@
 
 **Эндпоинты**:
 ```
+/swagger/
 /api/v1/actually_polls/{<pk>}
 /api/v1/actually_polls_questions_answers/{<pk>}
 /api/v1/all_polls_questions/{<pk>}
